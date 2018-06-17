@@ -39,27 +39,28 @@ h4 {
   padding-bottom: 4rem;
 }
 
-p, a {
+p {
   font-family: 'Roboto', sans-serif;
   font-size: 0.875rem;
   font-weight: 300;
 }
 
 a {
+  font-size: 0.875rem;
   text-decoration: none;
   color: #474747;
 }
 
 blockquote {
   text-align: center;
-  padding: 3%;
+  padding: 5%;
 }
 
 .textbold {
   font-weight: 400;
 }
 
-.textcolor-blue {
+.color-blue {
   color: #7ab1e8;
 }
 
@@ -72,7 +73,7 @@ blockquote {
 .hr-short {
   border-bottom: 1px solid #7AB1E8;
   width: 40px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   }
 
 .padding5 {
@@ -117,6 +118,11 @@ header {
 .navigation {
   padding: 2%;
   background-color: white;
+  box-shadow: #efefef 0px 0.5px 27px;
+}
+
+.navigation p {
+  font-family: 'Roboto Slab', serif;
 }
 
 .activetab {
@@ -126,7 +132,7 @@ header {
 /* Identity Styling */
 
 .identity, .visual-language, .collateral  {
-  background-color: #eee;
+  background-color: #7ab1e8;
   color: white;
   padding: 3%;
 }
