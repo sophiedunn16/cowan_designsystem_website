@@ -87,7 +87,9 @@ tintshades:
     rgba: 0. 0. 0. 1
     cmyk: 0. 0. 0. 0
     pms: 000 C
-
+gradients:
+  - color1: fff
+    color2: f848c4
 ---
 <!DOCTYPE html>
 <html>
@@ -338,6 +340,7 @@ tintshades:
       Secondary
     </h4>
 
+
     <div class="grid">
 
         {% for item in page.secondarycolor %}
@@ -364,11 +367,11 @@ tintshades:
 
     <!-- Tints & Shades swatch grid -->
 
-    <div class="grid">
+    <div class="grid-10">
 
       {% for item in page.tintshades %}
 
-      <div class="col-10">
+      <div class="col">
         <div></div> <!--colour-fill-->
         <p> Tint/Shade Name </p>
         <p> Hex: #000000 </p>
@@ -387,17 +390,21 @@ tintshades:
 
     <!-- Gradient 1 -->
 
-    <div>
-      <p>
-        #000000
+{% for item in page.gradients %}
+    <div style="background: linear-gradient (to right, #{{item.color1}}, #{{item.color2}})">
+    </div>
+    <div class="grid">
+      <p class="col-6">
+        #{{item.color1}}
       </p>
-      <p>
-        #000000
+      <p class="col-6">
+        #{{item.color2}}
       </p>
     </div>
+
+{% endfor %}
+
     <hr>
-
-
     <!-- Typography Title -->
 
     <h3>
