@@ -7,16 +7,21 @@
 
 /* Text Styles */
 
-h1, h2, h3, h4, blockquote {
+h1, h2, h3, h4, blockquote, a {
   font-family: 'Roboto Slab', serif;
 }
 
 h1 {
-  font-size: 5.75rem;
+  font-size: 5rem;
   font-weight: 700;
+  color: white;
 }
 
-h2, h3, h4, blockquote {
+h2 {
+  color: white;
+}
+
+h2, h3, h4, blockquote, a {
   font-weight: 300;
 }
 
@@ -32,24 +37,57 @@ h4 {
   font-size: 1.125rem;
 }
 
-p {
+p, a {
   font-family: 'Roboto', sans-serif;
   font-size: 0.875rem;
 }
 
+blockquote {
+  text-align: center;
+}
 
+hr {
 
+}
 
-
-
-
-/* STYLING BY SECTION */
-
-
+.textcolor-blue {
+  color: #7ab1e8;
+}
 
 /* Header Styling */
 
+header {
+  background-color: #eee;
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh;
+  text-align: center;
+  flex-direction: column;
+  justify-content: space-around;
+  display: flex;
+}
+
+/* .header-logo-position {
+  position: absolute;
+  top: 10px;
+}
+
+.header-accordian-position {
+  position: absolute;
+  bottom: 10px;
+} */
+
+
 /* Navigation Styling */
+
+.navigation {
+  padding: 2%;
+}
+
+.activetab {
+  color: #7ab1e8;
+}
+
 
 
 
