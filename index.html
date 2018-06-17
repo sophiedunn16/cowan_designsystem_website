@@ -89,6 +89,11 @@ tints_shades:
     rgba: 0. 0. 0. 1
     cmyk: 0. 0. 0. 0
     pms: 000 C
+  - name: cowan blue -5
+    hex: 2680da
+    rgba: 0. 0. 0. 1
+    cmyk: 0. 0. 0. 0
+    pms: 000 C
 
 gradients:
   - color1: fff
@@ -376,7 +381,7 @@ collateral:
           {% for item in page.master-colors %}
 
           <div class="col-2">
-            <div class="colour-square" style="background-color:#{{item.hex}}"></div> <!--colour-fill-->
+            <div class="color-tile" style="background-color:#{{item.hex}}"></div> <!--colour-fill-->
             <p> {{item.name}} </p>
             <p> Hex: {{item.hex}} </p>
             <p> RGBa: {{item.rgba}} </p>
@@ -401,7 +406,7 @@ collateral:
             {% for item in page.secondary-colors %}
 
           <div class="col-2">
-            <div></div> <!--colour-fill-->
+            <div class="color-tile" style="background-color:#{{item.hex}}"></div> <!--colour-fill-->
             <p> {{item.name}} </p>
             <p> Hex: {{item.hex}} </p>
             <p> RGBa: {{item.rgba}} </p>
@@ -427,7 +432,7 @@ collateral:
           {% for item in page.tints_shades %}
 
           <div class="col">
-            <div class="colour-square" style="background-color:#{{item.hex}}"></div> <!--colour-fill-->
+            <div class="color-tile" style="background-color:#{{item.hex}}"></div> <!--colour-fill-->
             <p> {{item.name}} </p>
             <p> Hex: {{item.hex}} </p>
           </div>
