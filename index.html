@@ -174,7 +174,13 @@ collateral:
   - collateral-type: Stationery
     description: Suite of digital & print applications of the new identity.
     picture:
-      - image_path: assets/placeholder-16x9.svg
+      - image_path: /assets/placeholder-16x9.svg
+        alt: placeholder
+      - image_path: /assets/placeholder-16x9.svg
+        alt: placeholder
+      - image_path: /assets/placeholder-16x9.svg
+        alt: placeholder
+      - image_path: /assets/placeholder-16x9.svg
         alt: placeholder
 ---
 <!DOCTYPE html>
@@ -600,7 +606,7 @@ collateral:
 
       <div class="grid">
 
-        {{% for item in page.collateral %}}
+        {% for item in page.collateral %}
 
     <!-- COLLATERAL / STATIONERY SECTION -->
 
@@ -614,14 +620,15 @@ collateral:
           </p>
         </div>
 
-        <div class="col-8"> {{% for picture in item.image %}}
+        <div class="col-8">
+          {% for picture in item.picture %}
           <img src="{{picture.image_path}}" alt="{{picture.alt}}">
 
-          {{% endfor %}}
+          {% endfor %}
 
         </div>
 
-        {{% endfor %}}
+        {% endfor %}
 
       </div>
 
