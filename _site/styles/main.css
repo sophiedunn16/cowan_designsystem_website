@@ -53,6 +53,7 @@ a {
 
 blockquote {
   text-align: center;
+  padding: 3%;
 }
 
 .textcolor-blue {
@@ -110,7 +111,7 @@ header {
 /* Blockquote Styling */
 
 blockquote {
-  padding: 3%;
+
 }
 
 /* Identity Styling */
