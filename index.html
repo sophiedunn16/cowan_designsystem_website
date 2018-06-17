@@ -1,5 +1,5 @@
 ---
-mastercolor:
+master-colors:
   - name: cowan blue
     hex: 7AB1E8
     rgba: 122. 177. 232. 1
@@ -31,7 +31,7 @@ mastercolor:
     cmyk: 49. 20. 0. 0
     pms: 000 C
 
-secondarycolor:
+secondary-colors:
   - name: cowan grey
     hex: 828A95
     rgba: 0. 0. 0. 1
@@ -63,7 +63,7 @@ secondarycolor:
     cmyk: 0. 0. 0. 0
     pms: 000 C
 
-tintshades:
+tints_shades:
   - name: cowan blue
     hex: 7ab1e8
     rgba: 0. 0. 0. 1
@@ -332,7 +332,7 @@ collateral:
 
       <div class="grid">
 
-        {% for item in page.mastercolor %}
+        {% for item in page.master-colors %}
 
         <div class="col-2">
           <div class="colour-square" style="background-color:#{{item.hex}}"></div> <!--colour-fill-->
@@ -357,7 +357,7 @@ collateral:
 
       <div class="grid">
 
-          {% for item in page.secondarycolor %}
+          {% for item in page.secondary-colors %}
 
         <div class="col-2">
           <div></div> <!--colour-fill-->
@@ -383,15 +383,15 @@ collateral:
 
       <div class="grid-10">
 
-        {% for item in page.tintshades %}
+        {% for item in page.tints_shades %}
 
         <div class="col">
-          <div></div> <!--colour-fill-->
-          <p> Tint/Shade Name </p>
-          <p> Hex: #000000 </p>
+          <div class="colour-square" style="background-color:#{{item.hex}}"></div> <!--colour-fill-->
+          <p> {{item.name}} </p>
+          <p> Hex: #{{item.hex}} </p>
         </div>
 
-      {% endfor %}
+        {% endfor %}
 
     </div>
     <hr>
