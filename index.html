@@ -186,6 +186,28 @@ collateral:
         alt: placeholder
       - image_path: /assets/placeholder-16x9.svg
         alt: placeholder
+  - collateral-type: Packaging
+    description: Suite of packaging applications using the new identity.
+    picture:
+      - image_path: /assets/placeholder-16x9.svg
+        alt: placeholder
+      - image_path: /assets/placeholder-16x9.svg
+        alt: placeholder
+      - image_path: /assets/placeholder-16x9.svg
+        alt: placeholder
+      - image_path: /assets/placeholder-16x9.svg
+        alt: placeholder
+  - collateral-type: e-Commerce
+    description: Suite of digital applications using the new identity.
+    picture:
+      - image_path: /assets/placeholder-16x9.svg
+        alt: placeholder
+      - image_path: /assets/placeholder-16x9.svg
+        alt: placeholder
+      - image_path: /assets/placeholder-16x9.svg
+        alt: placeholder
+      - image_path: /assets/placeholder-16x9.svg
+        alt: placeholder
 ---
 <!DOCTYPE html>
 <html>
@@ -460,7 +482,7 @@ collateral:
           {% for item in page.master-colors %}
 
           <div class="col-2">
-            <div class="color-tile" style="background-color:#{{item.hex}}"></div> <!--colour-fill-->
+            <div class="color-tile-lge" style="background-color:#{{item.hex}}"></div> <!--colour-fill-->
             <p class="text-bold-400"> {{item.name}} </p>
             <p></p>
             <p> Hex: #{{item.hex}} </p>
@@ -486,7 +508,7 @@ collateral:
             {% for item in page.secondary-colors %}
 
           <div class="col-2">
-            <div class="color-tile" style="background-color:#{{item.hex}}"></div> <!--colour-fill-->
+            <div class="color-tile-lge" style="background-color:#{{item.hex}}"></div> <!--colour-fill-->
             <p class="text-bold-400"> {{item.name}} </p>
             <p> Hex: #{{item.hex}} </p>
             <p> RGBa: {{item.rgba}} </p>
@@ -512,7 +534,7 @@ collateral:
           {% for item in page.tints_shades %}
 
           <div class="col">
-            <div class="color-tile" style="background-color:#{{item.hex}}"></div> <!--colour-fill-->
+            <div class="color-tile-sml" style="background-color:#{{item.hex}}"></div> <!--colour-fill-->
             <p class="text-bold-400"> {{item.name}} </p>
           <p> Hex: #{{item.hex}} </p>
           </div>
@@ -561,30 +583,30 @@ collateral:
         <div class="grid">
           <div class="col-4">
             <p>
-              <span class="text-bold-400" > Headlines </span>  / Font Name / Point Size / Line Height
+              <span class="text-bold-400 editable" > Headlines </span>  / Font Name / Point Size / Line Height
             </p>
             <p>
-              <span class="text-bold-400" > Subtitles </span>  / Font Name / Point Size / Line Height
+              <span class="text-bold-400 editable" > Subtitles </span>  / Font Name / Point Size / Line Height
             </p>
             <p>
-              <span class="text-bold-400" > Small Subtitles </span> / Font Name / Point Size / Line Height
+              <span class="text-bold-400 editable" > Small Subtitles </span> / Font Name / Point Size / Line Height
             </p>
             <p>
-              <span class="text-bold-400" > Body Copy </span> / Font Name / Point Size / Line Height
+              <span class="text-bold-400 editable" > Body Copy </span> / Font Name / Point Size / Line Height
             </p>
           </div>
           <div class="col-8">
-            <h1>
-              Headlines / Font Name / Point Size / Line Height
+            <h1 class="color-grey padding-bottom editable">
+              We design answers.
             </h1>
-            <h2>
-              Subtitles / Font Name / Point Size / Line Height
+            <h2 class="color-grey padding-bottom editable">
+              We design answers.
             </h2>
-            <h3>
-              Small Subtitles / Font Name / Point Size / Line Height
+            <h3 class="color-grey padding-bottom editable">
+              We design answers.
             </h3>
-            <p>
-              Body Copy / Font Name / Point Size / Line Height
+            <p class="color-grey padding-bottom editable">
+              We design answers.
             </p>
           </div>
         </div>
@@ -624,9 +646,9 @@ collateral:
           </p>
         </div>
 
-        <div class="col-8">
+        <div class="align-right col-8">
           {% for picture in item.picture %}
-          <img src="{{picture.image_path}}" alt="{{picture.alt}}">
+          <img class="padding-bottom" src="{{picture.image_path}}" alt="{{picture.alt}}">
 
           {% endfor %}
 

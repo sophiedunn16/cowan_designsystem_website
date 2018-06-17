@@ -85,6 +85,10 @@ footer {
   color: #7ab1e8;
 }
 
+.color-grey {
+  color: #474747;
+}
+
 .hr-long {
   border-bottom: 0.1px solid #474747;
   margin-top: 40px;
@@ -101,6 +105,10 @@ footer {
   padding: 5%;
 }
 
+.padding-bottom {
+  padding: 1%;
+}
+
 .align-right {
   text-align: right;
 }
@@ -109,9 +117,15 @@ footer {
   text-align: center;
 }
 
-.color-tile {
+.color-tile-lge {
   min-height: 15vh;
-  border-radius: 3px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.color-tile-sml {
+  min-height: 10vh;
+  border-radius: 5px;
   margin-bottom: 20px;
 }
 
