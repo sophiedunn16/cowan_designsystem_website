@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  border: 1px solid black;
 }
 
 /* Text Styles */
@@ -31,6 +30,7 @@ h2, blockquote {
 
 h3 {
   font-size: 1.9rem;
+  padding-bottom: 20px;
 }
 
 h4 {
@@ -71,7 +71,9 @@ header {
 
 .hr-short {
   border-bottom: 2px solid #7AB1E8;
-}
+  width: 50px;
+  margin: 0 0 2rem;
+  }
 
 /* Navigation Styling */
 
