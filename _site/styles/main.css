@@ -72,6 +72,7 @@ blockquote {
 .hr-short {
   border-bottom: 1px solid #7AB1E8;
   width: 40px;
+  margin-bottom: 20px;
   }
 
 .padding5 {
