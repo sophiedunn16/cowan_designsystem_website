@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  border: 1px solid #eee;
 }
 
 /* Text Styles */
@@ -30,11 +31,13 @@ h2, blockquote {
 
 h3 {
   font-size: 1.9rem;
-  padding-bottom: 20px;
+  padding-bottom: 1rem;
 }
 
 h4 {
   font-size: 1.125rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 }
 
 p, a {
@@ -42,17 +45,41 @@ p, a {
   font-size: 0.875rem;
 }
 
-blockquote {
-  text-align: center;
-}
 
 a {
   text-decoration: none;
   color: #474747;
 }
 
+blockquote {
+  text-align: center;
+}
+
 .textcolor-blue {
   color: #7ab1e8;
+}
+
+.hr-long {
+  border-bottom: 0.1px solid #474747;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.hr-short {
+  border-bottom: 1px solid #7AB1E8;
+  width: 40px;
+  }
+
+.padding5 {
+  padding: 5%;
+}
+
+.align-right {
+  text-align: right;
+}
+
+.align-center {
+  text-align: center;
 }
 
 /* Header Styling */
@@ -68,12 +95,6 @@ header {
   display: flex;
 }
 
-
-.hr-short {
-  border-bottom: 2px solid #7AB1E8;
-  width: 50px;
-  margin: 0 0 2rem;
-  }
 
 /* Navigation Styling */
 
@@ -94,7 +115,7 @@ blockquote {
 
 /* Identity Styling */
 
-.identity {
+.identity, .visual-language, .collateral  {
   background-color: #eee;
   color: white;
   padding: 3%;
@@ -102,18 +123,18 @@ blockquote {
 
 /* Visual Language Styling */
 
-.visual-language {
+/* .visual-language {
   background-color: #eee;
   color: white;
   padding: 3%;
-}
+} */
 
 /* Collateral Styling */
 
-.collateral {
+/* .collateral {
   background-color: #eee;
   color: white;
   padding: 3%;
-}
+} */
 
 /* Footer Styling */
