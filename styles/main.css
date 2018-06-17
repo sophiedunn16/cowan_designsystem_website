@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  border: 1px solid #eee;
 }
 
 /* Text Styles */
@@ -36,13 +35,14 @@ h3 {
 
 h4 {
   font-size: 1.125rem;
-  padding-top: 4rem;
+  padding-top: 3rem;
   padding-bottom: 4rem;
 }
 
 p, a {
   font-family: 'Roboto', sans-serif;
   font-size: 0.875rem;
+  font-weight: 300;
 }
 
 a {
@@ -53,6 +53,10 @@ a {
 blockquote {
   text-align: center;
   padding: 3%;
+}
+
+.textbold {
+  font-weight: 400;
 }
 
 .textcolor-blue {
@@ -83,7 +87,13 @@ blockquote {
 }
 
 .color-tile {
-  min-height: 100px;
+  min-height: 15vh;
+  border-radius: 3px;
+  margin-bottom: 20px;
+}
+
+.colorgradient {
+  min-height: 20px;
   border-radius: 3px;
   margin-bottom: 20px;
 }
@@ -118,6 +128,13 @@ header {
   background-color: #eee;
   color: white;
   padding: 3%;
+}
+
+.flex-central-stack {
+  flex-direction: column;
+  justify-content: space-around;
+  display: flex;
+  align-items: center;
 }
 
 /* Visual Language Styling */
