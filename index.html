@@ -30,6 +30,7 @@ mastercolor:
     rgba: 0. 0. 0. 1
     cmyk: 49. 20. 0. 0
     pms: 000 C
+
 secondarycolor:
   - name: cowan grey
     hex: 828A95
@@ -61,6 +62,7 @@ secondarycolor:
     rgba: 0. 0. 0. 1
     cmyk: 0. 0. 0. 0
     pms: 000 C
+
 tintshades:
   - name: cowan blue
     hex: 7ab1e8
@@ -87,9 +89,17 @@ tintshades:
     rgba: 0. 0. 0. 1
     cmyk: 0. 0. 0. 0
     pms: 000 C
+
 gradients:
   - color1: fff
     color2: f848c4
+
+collateral:
+  - collateraltype: Stationery
+    description: Suite of digital & print branding applications.
+    picture:
+      - image_path: assets/placeholder-16x9.svg
+        alt: placeholder
 ---
 <!DOCTYPE html>
 <html>
@@ -468,11 +478,42 @@ gradients:
 
     <div class="grid">
 
+      {{% for item in page.collateral %}}
+
   <!-- COLLATERAL / STATIONERY SECTION -->
 
       <div class="col-4">
         <h3>
-          Stationery
+          {{item.collateraltype}}
+        </h3>
+        <hr>
+        <p>
+          {{item.description}}
+        </p>
+      </div>
+
+      <div class="col-8"> {{% for picture in item.image %}}
+        <img src="{{picture.image_path}}" alt="{{picture.alt}}">
+
+        {{% endfor %}}
+
+      </div>
+
+        {{% endfor %}}
+
+    </div>
+
+    <footer>
+      <a href="www.cowan.com">
+        <img src="assets/cowan-logo-footer.svg" alt="Cowan">
+      </a>
+    </footer>
+
+<!-- COLLATERAL / PACKAGING SECTION
+
+      <div class="col-4">
+        <h3>
+          Packaging
         </h3>
         <hr>
         <p>
@@ -485,11 +526,11 @@ gradients:
         <img src="assets/placeholder-16x9.svg">
       </div>
 
-<!-- COLLATERAL / PACKAGING SECTION -->
+     COLLATERAL / E-COMMERCE
 
       <div class="col-4">
         <h3>
-          Stationery
+          e-Commerce
         </h3>
         <hr>
         <p>
@@ -503,7 +544,9 @@ gradients:
       </div>
     </div>
 
-    <!-- Master Colours Title -->
+  -->
+
+
 
 
 
