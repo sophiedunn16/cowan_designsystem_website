@@ -167,8 +167,12 @@ tints_shades:
 
 
 gradients:
-  - color1: fff
-    color2: f848c4
+  - color1: 378adc
+    color2: 7ab1e8
+  - color1: 378adc
+    color2: bdd8f4
+  - color1: 7ab1e8
+    color2: eff6fc
 
 collateral:
   - collateral-type: Stationery
@@ -224,8 +228,8 @@ collateral:
   <!-- Sticky Navigation -->
 
     <section class="navigation grid-spaceBetween-middle">
-      <p class="editable">
-        Brand Name Design System
+      <p>
+        <span class="text-bold-400 editable"> Brand Name </span> Design System
       </p>
       <a href="#identity">Identity</a>
       <a href="#visual-language">Visual Language</a>
@@ -457,7 +461,7 @@ collateral:
 
           <div class="col-2">
             <div class="color-tile" style="background-color:#{{item.hex}}"></div> <!--colour-fill-->
-            <p class="textbold"> {{item.name}} </p>
+            <p class="text-bold-400"> {{item.name}} </p>
             <p></p>
             <p> Hex: #{{item.hex}} </p>
             <p> RGBa: {{item.rgba}} </p>
@@ -483,7 +487,7 @@ collateral:
 
           <div class="col-2">
             <div class="color-tile" style="background-color:#{{item.hex}}"></div> <!--colour-fill-->
-            <p class="textbold"> {{item.name}} </p>
+            <p class="text-bold-400"> {{item.name}} </p>
             <p> Hex: #{{item.hex}} </p>
             <p> RGBa: {{item.rgba}} </p>
             <p> CMYK: {{item.cymk}} </p>
@@ -509,7 +513,7 @@ collateral:
 
           <div class="col">
             <div class="color-tile" style="background-color:#{{item.hex}}"></div> <!--colour-fill-->
-            <p class="textbold"> {{item.name}} </p>
+            <p class="text-bold-400"> {{item.name}} </p>
           <p> Hex: #{{item.hex}} </p>
           </div>
 
@@ -527,13 +531,13 @@ collateral:
         <!-- Gradient 1 -->
 
     {% for item in page.gradients %}
-        <div style="background: linear-gradient (to right, #{{item.color1}}, #{{item.color2}})">
+        <div class="colorgradient" style="background: linear-gradient(to right, #{{item.color1}}, #{{item.color2}})">
         </div>
         <div class="grid">
           <p class="col-6">
             #{{item.color1}}
           </p>
-          <p class="col-6">
+          <p class="align-right col-6">
             #{{item.color2}}
           </p>
         </div>
@@ -604,17 +608,17 @@ collateral:
 
       <!-- Collateral Title -->
 
-      <div class="grid">
+      <div class="grid padding5">
 
         {% for item in page.collateral %}
 
     <!-- COLLATERAL / STATIONERY SECTION -->
 
         <div class="col-4">
-          <h3>
+          <h3 class="color-blue">
             {{item.collateral-type}}
           </h3>
-          <hr>
+          <hr class="hr-short">
           <p>
             {{item.description}}
           </p>
