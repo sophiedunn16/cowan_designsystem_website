@@ -46,8 +46,9 @@ blockquote {
   text-align: center;
 }
 
-hr {
-
+a {
+  text-decoration: none;
+  color: #474747;
 }
 
 .textcolor-blue {
@@ -67,36 +68,50 @@ header {
   display: flex;
 }
 
-/* .header-logo-position {
-  position: absolute;
-  top: 10px;
+
+.hr-short {
+  border-bottom: 2px solid #7AB1E8;
 }
-
-.header-accordian-position {
-  position: absolute;
-  bottom: 10px;
-} */
-
 
 /* Navigation Styling */
 
 .navigation {
   padding: 2%;
+  background-color: white;
 }
 
 .activetab {
   color: #7ab1e8;
 }
 
-
-
-
 /* Blockquote Styling */
+
+blockquote {
+  padding: 3%;
+}
 
 /* Identity Styling */
 
+.identity {
+  background-color: #eee;
+  color: white;
+  padding: 3%;
+}
+
 /* Visual Language Styling */
 
+.visual-language {
+  background-color: #eee;
+  color: white;
+  padding: 3%;
+}
+
 /* Collateral Styling */
+
+.collateral {
+  background-color: #eee;
+  color: white;
+  padding: 3%;
+}
 
 /* Footer Styling */
