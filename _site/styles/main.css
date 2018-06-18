@@ -17,6 +17,8 @@ header {
   flex-direction: column;
   justify-content: space-around;
   display: flex;
+  position: relative;
+  z-index: 99999;
 }
 
 h1, h2, h3, h4, blockquote, a {
@@ -90,7 +92,7 @@ footer {
 }
 
 .hr-long {
-  border-bottom: 0.1px solid #474747;
+  border-bottom: 0.1px solid #ECECEC;
   margin-top: 60px;
   margin-bottom: 40px;
 }
@@ -111,6 +113,9 @@ footer {
 
 .download-padding {
   padding: 80px 0px 20px 0px;
+}
+.download-padding img {
+  padding-left: 8px;
 }
 
 .align-right {

@@ -17,24 +17,54 @@ $(document).ready(function() {
   //     $(".navigation").addClass("appear")
   //   });
 
-  $(".dropdown-section").click(function(){
-    $(this).toggleClass("active");
-    $(this).children(".dropdown-content").slideToggle('10000');
-    $(".navigation").addClass("appear")
-  })
-  $('.identity-finder').click(function(){
-    $('.identity-content').slideDown('2000');
-    $('.identity-section').addClass('active');
+  // $(".dropdown-section").click(function(){
+  //   $(this).toggleClass("active");
+  //   $(this).children(".dropdown-content").slideToggle('10000');
+  //   $(".navigation").addClass("appear")
+  // })
 
+
+
+  $('.identity-finder').click(function(){
+    $('.identity-content').slideDown(2000);
+    $('.identity-section').addClass('active');
   })
+  $('.identity-bar').click(function(){
+    $('.identity-content').slideToggle(800);
+    $('.identity-section').toggleClass('active');
+    $(".navigation").addClass("appear");
+  })
+
+
   $('.visual-language-finder').click(function(){
-    $('.visual-language-content').slideDown('2000')
+    $('.visual-language-content').slideDown(2000);
     $('.visual-language-section').addClass('active');
   })
+  $('.visual-language-bar').click(function(){
+    $('.visual-language-content').slideToggle(800);
+    $('.visual-language-section').toggleClass('active');
+    $(".navigation").addClass("appear");
+  })
+
+
   $('.collateral-finder').click(function(){
-    $('.collateral-content').slideDown('2000')
+    $('.collateral-content').slideDown(2000);
     $('.collateral-section').addClass('active');
   })
+  $('.collateral-bar').click(function(){
+    $('.collateral-content').slideToggle(800);
+    $('.collateral-section').toggleClass('active');
+    $(".navigation").addClass("appear");
+  })
+
+
+  $('.the-grand-collapser').click(function(){
+    $('.dropdown-content').slideUp(2000);
+    $('.dropdown-section').removeClass('active');
+    $('.navigation').removeClass('appear');
+
+  })
+
 
     // Select all links with hashes
 $('a[href*="#"]')
