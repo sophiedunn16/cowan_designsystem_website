@@ -264,7 +264,7 @@ collateral:
 
   <!-- Blockquote -->
 
-    <section id=blockquote>
+    <section class="show-me" id=blockquote>
       <blockquote class="editable">
         A very wise statement about the new identity goes here on two lines.
         A very wise statement about the new identity goes here on two lines.
@@ -314,7 +314,7 @@ collateral:
 
         <!--Master Logo-->
 
-        <div class="align-center max-width-900">
+        <div class="show-me align-center max-width-900">
           <img class="editable" src="assets/cowan-logotype-master.png" alt="Cowan Master Logotype">
 
           <!--Variations of Master logo go here -->
@@ -355,7 +355,7 @@ collateral:
 
         <!--Secondary Logo-->
 
-        <div class="align-center max-width-900">
+        <div class="show-me align-center max-width-900">
           <img class="editable" src="assets/cowan-logotype-master.png" alt="Cowan Secondary Logotype">
 
           <!--Variations of Secondary logo go here -->
@@ -391,7 +391,7 @@ collateral:
           </a>
         </div>
 
-          <div class="align-center max-width-900">
+          <div class="show-me align-center max-width-900">
             <img class="editable" src="assets/cowan-logotype-lockup-horiz.png" alt="Cowan Lockup Horizontal">
             <img class="editable" src="assets/cowan-logotype-lockup-vert.png" alt="Cowan Lockup Vertical">
           </div>
@@ -413,7 +413,7 @@ collateral:
         </div>
 
         <!--Main Icon-->
-        <div class="align-center max-width-900">
+        <div class="show-me align-center max-width-900">
           <img class="editable" src="assets/cowan-logotype-lockup-horiz.png" alt="Cowan Icon">
 
           <!--Variations of Icons go here -->
@@ -477,7 +477,7 @@ collateral:
 
           <!-- Master Colour swatch grid -->
 
-        <div class="grid">
+        <div class="show-me grid">
 
           {% for item in page.master-colors %}
 
@@ -503,7 +503,7 @@ collateral:
         </h4>
 
 
-        <div class="grid">
+        <div class="show-me grid">
 
             {% for item in page.secondary-colors %}
 
@@ -529,7 +529,7 @@ collateral:
 
         <!-- Tints & Shades swatch grid -->
 
-        <div class="grid-10">
+        <div class="show-me grid-10">
 
           {% for item in page.tints_shades %}
 
@@ -553,13 +553,13 @@ collateral:
         <!-- Gradient 1 -->
 
     {% for item in page.gradients %}
-        <div class="colorgradient" style="background: linear-gradient(to right, #{{item.color1}}, #{{item.color2}})">
+        <div class="show-me colorgradient" style="background: linear-gradient(to right, #{{item.color1}}, #{{item.color2}})">
         </div>
-        <div class="grid">
+        <div class="show-me grid">
           <p class="col-6">
             #{{item.color1}}
           </p>
-          <p class="align-right col-6">
+          <p class="show-me align-right col-6">
             #{{item.color2}}
           </p>
         </div>
@@ -580,7 +580,7 @@ collateral:
         <a href="..."></a>
         <!--Insert download button here-->
 
-        <div class="grid-top">
+        <div class="show-me grid-top">
           <div class="large-type-padding col-4">
             <p class="editable">
               <span class="text-bold-400" > Headlines </span>  / Font Name / Point Size / Line Height
@@ -665,7 +665,7 @@ collateral:
           </p>
         </div>
 
-        <div class="align-right col-8">
+        <div class="show-me align-right col-8">
           {% for picture in item.picture %}
           <img class="padding-bottom" src="{{picture.image_path}}" alt="{{picture.alt}}">
 
@@ -685,5 +685,12 @@ collateral:
       </a>
     </footer>
 
+    <!--JAVASCRIPT-->
+    <script type="text/javascript" src="/js/jquery.min.js">
+    </script>
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js">
+    </script>
+    <script type="text/javascript" src="/js/main.js">
+    </script>
   </body>
 </html>
