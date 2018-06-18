@@ -209,6 +209,12 @@ footer {
   display: none;
 }
 
+.scroll-top-icon {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+}
+
 /* Typography Specimen Styling */
 
 
