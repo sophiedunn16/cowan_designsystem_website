@@ -63,6 +63,7 @@ a {
   font-size: 0.875rem;
   text-decoration: none;
   color: #474747;
+  transition: .5s;
 }
 
 blockquote {
@@ -209,4 +210,13 @@ footer {
 
 .linebreak {
   display: block;
+}
+
+.max-width-900 {
+  max-width: 900px;
+  margin: auto;
+}
+
+a:hover {
+  color: #7ab1e8;
 }
