@@ -140,6 +140,26 @@ footer {
   padding: 2%;
   background-color: white;
   box-shadow: #efefef 0px 0.5px 27px;
+  width: 100vw;
+  position: fixed;
+  top: -100%;
+  right: 0;
+  transition: .3s;
+  margin: 0;
+  z-index: 9;
+}
+
+.navigation.appear {
+  top: 0;
+}
+
+.active .expand-adapt {
+  /* opacity: 0; */
+}
+
+.id-destination {
+  position: absolute;
+  top: 60px;
 }
 
 .navigation p {
@@ -151,9 +171,20 @@ footer {
 }
 
 .identity, .visual-language, .collateral  {
-  background-color: #7ab1e8;
   color: white;
   padding: 3%;
+}
+
+.identity {
+  background-color: #599de2;
+}
+
+.visual-language {
+  background-color: #7ab1e8;
+}
+
+.collateral {
+  background-color: #9bc5ee;
 }
 
 .flex-central-stack {
@@ -161,6 +192,14 @@ footer {
   justify-content: space-around;
   display: flex;
   align-items: center;
+}
+
+.dropdown-section {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
 }
 
 /* Typography Specimen Styling */
@@ -217,6 +256,6 @@ footer {
   margin: auto;
 }
 
-a:hover {
+.navigation a:hover {
   color: #7ab1e8;
 }
