@@ -152,8 +152,12 @@ footer {
 .navigation.appear {
   top: 0;
 }
+.accordian-icon-swivel {
+  transition: 0.5s;
+}
 
-.active .expand-adapt {
+.active .accordian-icon-swivel {
+  transform: rotatez(180deg);
   /* opacity: 0; */
 }
 

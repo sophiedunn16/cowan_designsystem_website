@@ -18,12 +18,23 @@ $(document).ready(function() {
   //   });
 
   $(".dropdown-section").click(function(){
-    $(".dropdown-section").removeClass("active");
-    $(this).addClass("active");
-    $(".dropdown-section.active").children(".dropdown-content").slideDown("2000");
+    $(this).toggleClass("active");
+    $(this).children(".dropdown-content").slideToggle('10000');
     $(".navigation").addClass("appear")
   })
-  
+  $('.identity-finder').click(function(){
+    $('.identity-content').slideDown('2000');
+    $('.identity-section').addClass('active');
+
+  })
+  $('.visual-language-finder').click(function(){
+    $('.visual-language-content').slideDown('2000')
+    $('.visual-language-section').addClass('active');
+  })
+  $('.collateral-finder').click(function(){
+    $('.collateral-content').slideDown('2000')
+    $('.collateral-section').addClass('active');
+  })
 
     // Select all links with hashes
 $('a[href*="#"]')
