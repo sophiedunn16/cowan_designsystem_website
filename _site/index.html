@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<head>
+<head> 
 <title>Cowan Design System</title>
 <link rel="stylesheet" href="styles/gridlex.min.css">
 
@@ -11,24 +11,24 @@
 <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700|Roboto:300,400" rel="stylesheet">
 
 <link rel="stylesheet" href="/styles/main.css">
-</head>
+ </head>
 
   <body class="menu-hidden">
 
   <!-- Header / Landing Page -->
 
-    <header>
+    <header id="header">
       <a href="https://cowan.com.au" target="_blank">
         <img src="assets/cowan-logotype-white-1000px.svg" alt="Cowan">
       </a>
 
       <div>
-        <h1 class="editable">
-          Brand Name
-        </h1>
-        <h2>
-          Design System
-        </h2>
+          <h1 class="editable">
+            Brand Name
+          </h1>
+          <h2>
+            Design System
+          </h2>
       </div>
 
       <a href="#blockquote"> <!--This id references Blockquote section & scrolls down -->
@@ -39,9 +39,11 @@
   <!-- Sticky Navigation -->
 
     <section class="navigation grid-spaceBetween-middle">
-      <p>
-        <span class="text-bold-400 editable"> Brand Name </span> Design System
-      </p>
+      <a href="#header">
+        <p>
+          <span class="text-bold-400 editable"> Brand Name </span> Design System
+        </p>
+      </a>
       <a class="identity-finder" href="#identity">Identity</a>
       <a class="visual-language-finder" href="#visual-language">Visual Language</a>
       <a class="collateral-finder" href="#collateral">Collateral</a>
@@ -55,8 +57,7 @@
 
     <section class="show-me" id=blockquote>
       <blockquote class="editable">
-        A very wise statement about the new identity goes here on two lines.
-        A very wise statement about the new identity goes here on two lines.
+        Cowan's brand identity embodies three harmonious elements; simplicity, collaboration and courage.
       </blockquote>
     </section>
 
@@ -204,26 +205,26 @@
 
         <!--Main Icon-->
         <div class="show-me align-center max-width-900">
-          <img class="editable" src="assets/cowan-logotype-lockup-horiz.png" alt="Cowan Icon">
+          <img class="editable" src="assets/icons/cowan-icon-blue.svg" alt="Cowan Icon">
 
           <!--Variations of Icons go here -->
 
           <div class="grid-middle-center">
 
             <div class="col-3"> <!--Icon Variation 1-->
-              <img class="editable" src="assets/cowan-logotype-blue.png" alt="Cowan Icon Blue">
+              <img class="editable" src="assets/icons/cowan-icon-white_on_blue.svg" alt="Cowan Icon White on Blue">
             </div>
 
             <div class="col-3"> <!--Icon Variation 2-->
-              <img class="editable" src="assets/cowan-logotype-darkgrey.png" alt="Cowan Icon Dark Grey">
+              <img class="editable" src="assets/icons/cowan-icon-black_on_white.svg" alt="Cowan Icon Black">
             </div>
 
             <div class="col-3"> <!--Icon Variation 3-->
-              <img class="editable" src="assets/cowan-logotype-lightgrey.png" alt="Cowan Icon Light Grey">
+              <img class="editable" src="assets/icons/cowan-icon-darkgrey_on_lightgrey.svg" alt="Cowan Icon Light Grey">
             </div>
           </div>
 
-          <div class="grid-middle-center">
+          <div class="grid-middle-center download-padding">
             <a href="assets/logo-packages/cowan-logos.zip">Download Identity
               <img src="assets/download-icon.svg">
             </a>
@@ -670,7 +671,7 @@
 
           <div class="large-type-padding col-8">
             <p class="large-type color-grey editable">
-              We design answers.<span class="linebreak">1234567890!&amp;£$@</span>
+              We design answers.<span class="linebreak">1234567890*!&amp;£$@</span>
             </p>
           </div>
 
@@ -682,7 +683,7 @@
 
           <div class="medium-type-padding col-8">
             <p class="medium-type color-grey editable">
-              We design answers.
+              We design answers.<span class="linebreak">1234567890*!&amp;£$@</span>
             </p>
           </div>
 
@@ -694,7 +695,7 @@
 
           <div class="small-type-padding col-8">
             <p class="small-type color-grey editable">
-              We design answers.
+              We design answers.<span class="linebreak">1234567890*!&amp;£$@</span>
             </p>
           </div>
 
@@ -706,7 +707,7 @@
 
           <div class="xsmall-type-padding col-8">
             <p class="xsmall-type color-grey editable">
-              We design answers.
+              We design answers. Our purpose is to realise potential. Our role is to help brands become more successful. Our shopper-centric approach has been crafted over 30 years to simplify brand choice and connect consumers to brands. Every brand has the potential to be more. Born in Australia, Cowan blends ambition with strategy to create, shape and reframe brands to captivate and engage. 1234567890*!&amp;£$@
             </p>
           </div>
         </div>
@@ -839,6 +840,7 @@
       </a>
     </footer>
 
+    
     <!--JAVASCRIPT-->
     <script type="text/javascript" src="/js/jquery.min.js">
     </script>
@@ -846,5 +848,7 @@
     </script>
     <script type="text/javascript" src="/js/main.js">
     </script>
+
+
   </body>
 </html>
