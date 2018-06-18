@@ -23,6 +23,7 @@ $(document).ready(function() {
     $(".dropdown-section.active").children(".dropdown-content").slideDown("2000");
     $(".navigation").addClass("appear")
   })
+  
 
     // Select all links with hashes
 $('a[href*="#"]')
