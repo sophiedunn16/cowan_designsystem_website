@@ -222,13 +222,13 @@ footer {
   font-family: 'Roboto Slab', serif;
 }
 
-.medium-type, .small-type, .xsmall-type {
-  font-family: 'Roboto Slab', serif;
-  font-weight: 300;
-}
 .large-type {
   font-size: 3.75rem;
   font-weight: 400;
+}
+
+.medium-type, .small-type, .xsmall-type {
+  font-weight: 300;
 }
 
 .medium-type {
@@ -240,7 +240,7 @@ footer {
 }
 
 .xsmall-type {
-  font-family: 'Roboto Slab', serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 1rem;
   line-height: 1.5;
 }
