@@ -161,3 +161,31 @@ footer {
   display: flex;
   align-items: center;
 }
+
+/* Typography Specimen Styling */
+
+.large-type, .medium-type, .small-type {
+  font-family: 'Roboto Slab', serif;
+}
+
+.medium-type, .small-type, .xsmall-type {
+  font-family: 'Roboto Slab', serif;
+  font-weight: 300;
+}
+.large-type {
+  font-size: 3.75rem;
+  font-weight: 400;
+}
+
+.medium-type {
+  font-size: 3rem;
+}
+
+.small-type {
+  font-size: 2.5rem;
+}
+
+.xsmall-type {
+  font-family: 'Roboto Slab', serif;
+  font-size: 2rem;
+}
