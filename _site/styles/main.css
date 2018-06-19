@@ -260,16 +260,6 @@ footer {
 .mobile-show {
   display: none;
 }
-@media (max-width: 576px) {
-
-  .large-type {
-    word-break: break-all;
-  }
-
-  .mobile-show {
-    display: block;
-  }
-
 
 
 .large-type {
@@ -374,4 +364,19 @@ body.menu-hidden .mobile-menu-close {
 
 body.menu-visible .mobile-menu-close {
   display: block;
+}
+
+
+@media (max-width: 576px) {
+
+  .large-type {
+    word-break: break-all;
+  }
+
+
+
+  .mobile-show {
+    display: block;
+  }
+
 }
