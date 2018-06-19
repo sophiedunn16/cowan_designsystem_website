@@ -257,13 +257,20 @@ footer {
   font-family: 'Roboto Slab', serif;
 }
 
+.mobile-show {
+  display: none;
+}
 @media (max-width: 576px) {
 
   .large-type {
     word-break: break-all;
   }
 
-}
+  .mobile-show {
+    display: block;
+  }
+
+
 
 .large-type {
   font-size: 3.75rem;
